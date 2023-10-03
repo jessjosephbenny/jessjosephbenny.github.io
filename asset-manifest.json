@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.30f862c5.css",
+    "main.js": "/static/js/main.5a1e6c0d.js",
+    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/leaf.png": "/static/media/leaf.ff2616f664c8c0ceab91.png",
+    "static/media/emotion.png": "/static/media/emotion.eabfc16e7a146ab15778.png",
+    "static/media/suicide.png": "/static/media/suicide.9c86cd7138a398c45fa5.png",
+    "static/media/ExpenseA3.png": "/static/media/ExpenseA3.a6701896a0f9bf09e60c.png",
+    "static/media/ExpenseA2.png": "/static/media/ExpenseA2.2b0f9fdc9824e67100a8.png",
+    "static/media/codeEditor.png": "/static/media/codeEditor.1b585492490c8c1cace9.png",
+    "static/media/blog.png": "/static/media/blog.fb8ab7f271a937d5fc01.png",
+    "static/media/Jess Joseph Benny.pdf": "/static/media/Jess Joseph Benny.4bb59bc4ba7aedc69ca9.pdf",
+    "static/media/ExpenseA1.png": "/static/media/ExpenseA1.8fb1efe8388700b01a37.png",
+    "static/media/ExpenseA4.png": "/static/media/ExpenseA4.c59051a381b9fa11128c.png",
+    "static/media/chatify.png": "/static/media/chatify.7206044e0b5cdad44726.png",
+    "static/media/Data extraction-rafiki.svg": "/static/media/Data extraction-rafiki.565dda60858d4a48a6bd5638d44e924f.svg",
+    "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
+    "index.html": "/index.html",
+    "main.30f862c5.css.map": "/static/css/main.30f862c5.css.map",
+    "main.5a1e6c0d.js.map": "/static/js/main.5a1e6c0d.js.map",
+    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30f862c5.css",
+    "static/js/main.5a1e6c0d.js"
+  ]
+}
