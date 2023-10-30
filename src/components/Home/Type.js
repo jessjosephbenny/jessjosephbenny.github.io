@@ -9,7 +9,6 @@ function Type() {
           "MSc Computer Sciene in AI",
           "Software Engineer",
           "AI Enthusiast",
-          "Expert in NLP",
         ],
         autoStart: true,
         loop: true,

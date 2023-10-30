@@ -1,43 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import Chip from '@mui/material/Chip';
-import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import Slideshow from "./SlideShow";
+import DetailDialog from "./DetailDialog";
 
-function ProjectCards(props) {
+function ProjectCards({data}) {
+  const [DetailDialogOpen, setDetailDialogOpen] = useState(false)
+  const handleCardClick = (e) => {
+    setDetailDialogOpen(true)
+  }
   return (
-    <Card className="project-card-view">
-      <Chip label={props.projectType} color="primary" size="small" style={{width:'128px', margin:'8px'}}/>
-      <Slideshow images={props.imgPath} />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
+    <>
+    <Card className="project-card-view" >
+      <Chip label={data.ProjectType} color="primary" size="small" style={{width:'128px', margin:'8px'}}/>
+      <Slideshow images={data.Images} />
+      <Card.Body onClick={handleCardClick}>
+        <Card.Title>{data.Title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
-          {props.description}
+          {data.Description}
         </Card.Text>
-        <Button variant="primary" href={props.ghLink} target="_blank">
+        <Button variant="primary" href={data.ghLink} target="_blank">
           <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
+          GitHub
         </Button>
         {"\n"}
         {"\n"}
-
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
-
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
-          </Button>
-        )}
       </Card.Body>
     </Card>
+    <DetailDialog open={DetailDialogOpen} setOpen={()=>setDetailDialogOpen(false)} data={data}/>
+    </>
   );
 }
 export default ProjectCards;

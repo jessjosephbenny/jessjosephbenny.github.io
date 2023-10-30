@@ -4,7 +4,6 @@ import 'react-vertical-timeline-component/style.min.css';
 import {
     MdWork,
     MdSchool,
-    MdStar
 } from "react-icons/md";
 import { Container } from "react-bootstrap";
 import Particle from "./Particle";
@@ -24,8 +23,8 @@ function Timeline() {
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="May 2021 - Present"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                        icon={<MdWork />}
+                        iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
+                        icon={<MdSchool />}
                     >
                         <h3 className="vertical-timeline-element-title">MSc in Computer Science</h3>
                         <h4 className="vertical-timeline-element-subtitle">University of Windsor</h4>
@@ -99,10 +98,6 @@ function Timeline() {
                             </ul>
                         </p>
                     </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                        icon={<MdStar />}
-                    />
                 </VerticalTimeline>
             </Container>
         </Container>

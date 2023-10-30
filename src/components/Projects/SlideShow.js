@@ -31,6 +31,9 @@ const Slideshow = ({ images }) => {
       >
         <ArrowForwardIos />
       </Button>
+      <div style={{ position: 'absolute', bottom: '10px', left: '50%', transform: 'translateX(-50%)', color: 'white', background: 'rgba(0, 0, 0, 0.6)', padding: '2px 6px', borderRadius: '4px' }}>
+        {currentImageIndex + 1} of {images.length}
+      </div>
     </div>
   );
 };
