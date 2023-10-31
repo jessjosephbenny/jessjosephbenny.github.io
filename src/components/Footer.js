@@ -11,7 +11,7 @@ function Footer() {
   let year = date.getFullYear();
   return (
     <Container fluid className="footer">
-      <Row justify>
+      <Row justify="true">
         <Col md="4"></Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

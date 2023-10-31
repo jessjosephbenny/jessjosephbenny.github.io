@@ -14,22 +14,22 @@ function ProjectCards({data}) {
   return (
     <>
     <Card className="project-card-view" >
-      <Chip label={data.ProjectType} color="primary" size="small" style={{width:'128px', margin:'8px'}}/>
+      <Chip label={data.ProjectType} color={data.Color==='Blue'?"primary":"error"} size="small" style={{width:'128px', margin:'8px'}}/>
       <Slideshow images={data.Images} />
       <Card.Body onClick={handleCardClick}>
         <Card.Title>{data.Title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {data.Description}
         </Card.Text>
-        <Button variant="primary" href={data.ghLink} target="_blank">
+        {data.ghLink?<Button variant="primary" href={data.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           GitHub
-        </Button>
+        </Button>:null}
         {"\n"}
         {"\n"}
       </Card.Body>
     </Card>
-    <DetailDialog open={DetailDialogOpen} setOpen={()=>setDetailDialogOpen(false)} data={data}/>
+    {data.Details !=null?<DetailDialog open={DetailDialogOpen} setOpen={()=>setDetailDialogOpen(false)} data={data}/>:null}
     </>
   );
 }

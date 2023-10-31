@@ -2,34 +2,22 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
+
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import Typewriter from "typewriter-effect";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
+  AiOutlineHistory,
+  AiOutlineSetting  
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
-  const [navColour, updateNavbar] = useState(false);
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
-    }
-  }
-
-  window.addEventListener("scroll", scrollHandler);
 
   return (
     <Navbar
@@ -65,14 +53,15 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link  href="/#home" onClick={() => updateExpanded(false)}>
+              <Nav.Link as={Link}  to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                href="/#about"
+                as={Link}
+                to="/#about"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -81,7 +70,21 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="/#projects"
+                as={Link}
+                to="/#timeline"
+                onClick={() => updateExpanded(false)}
+              >
+                <AiOutlineHistory
+                  style={{ marginBottom: "2px" }}
+                />{" "}
+                Timeline
+              </Nav.Link>
+            </Nav.Item> 
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/#projects"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
@@ -90,16 +93,14 @@ function NavBar() {
                 Projects
               </Nav.Link>
             </Nav.Item>
-
+            
             <Nav.Item>
               <Nav.Link
-                href="/#timeline"
+                as={Link}
+                to="/#skills"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Timeline
+                <AiOutlineSetting style={{ marginBottom: "2px" }} /> Technical Skills
               </Nav.Link>
             </Nav.Item>
 

@@ -5,16 +5,16 @@ import {
     AiOutlineLinkedin
   } from "react-icons/ai";
 
-function SidePanel() {
+function SidePanel({orientation}) {
     return(
-        <div className="glassy-panel">
-        <a className="social-button" href="https://www.linkedin.com/in/jessjosephbenny/">
+        <div className={orientation==='vertical'?"glassy-panel":"glassy-panel-horizontal"}>
+        <a className={orientation==='vertical'?"social-button":"social-button-horizontal"} href="https://www.linkedin.com/in/jessjosephbenny/">
             <AiOutlineLinkedin/>
         </a>
-        <a className="social-button" href="https://www.instagram.com/jessjosephbenny/" target="_blank">
+        <a className={orientation==='vertical'?"social-button":"social-button-horizontal"} href="https://www.instagram.com/jessjosephbenny/" >
             <AiOutlineInstagram/>
         </a>
-        <a className="social-button" href="https://github.com/jessjosephbenny" target="_blank">
+        <a className={orientation==='vertical'?"social-button":"social-button-horizontal"} href="https://github.com/jessjosephbenny">
             <AiOutlineGithub/>
         </a>
     </div>

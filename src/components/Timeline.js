@@ -28,13 +28,13 @@ function Timeline() {
                     >
                         <h3 className="vertical-timeline-element-title">MSc in Computer Science</h3>
                         <h4 className="vertical-timeline-element-subtitle">University of Windsor</h4>
-                        <p>
+                        <div className="timeline-event-content">
                             <ul style={{textAlign:"left"}}>
                                 <li>8.75 CGPA</li>
                                 <li>Academic thesis on the topic 'Evaluation of Large Language Models for Knowledge-Informed Fake News Detection.'</li>
                                 <li>Relevant Coursework: Statistical Learning, Intro to Artificial Intelligence, Deep Learning and Neural Networks, Applied Artificial Intelligence, Visual Processing, Information Retrieval Systems</li>
                             </ul>
-                        </p>
+                        </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -44,7 +44,7 @@ function Timeline() {
                     >
                         <h3 className="vertical-timeline-element-title">Software Engineer Co-op</h3>
                         <h4 className="vertical-timeline-element-subtitle">Manulife, Toronto, ON</h4>
-                        <p>
+                        <div className="timeline-event-content">
                         <span style={{textAlign:"left"}}>An 8-month Co-op program later got extended to 12 months as part of my studies. </span>
                         <ul style={{textAlign:"left"}}>
                             <li>Created an enterprise dashboard spanning 9 pages using Power BI, enhancing workforce-related decision-making for stakeholders.</li>
@@ -53,7 +53,7 @@ function Timeline() {
                             <li>Designed and executed a Proof of Concept (POC) for an innovative Automatic Azure Architecture Diagram Creation Tool.</li>
                             <li>Successfully integrated Adobe Analytics into an internal application to capture and analyze application-specific usage metrics, providing valuable insights for strategic decision-making.</li>
                         </ul>
-                        </p>
+                        </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -73,7 +73,7 @@ function Timeline() {
                     >
                         <h3 className="vertical-timeline-element-title">Full Stack Software Engineer</h3>
                         <h4 className="vertical-timeline-element-subtitle">Chennai, India</h4>
-                        <p>
+                        <div className="timeline-event-content">
                         <ul style={{textAlign:"left"}}>
                             <li>Led a team of 3 members in the design, development, and testing of a series of innovative marketing tools for the parent organization.</li>
                             <li>Played a key role in the design and development of a series of migration acceleration tools utilizing Spring Boot, React, and MongoDB, significantly reducing the time and complexity of migrating the enterprise application.</li>
@@ -81,7 +81,7 @@ function Timeline() {
                             <li>Enhanced UI and resolved bugs in an enterprise asset management application written in Java, JavaScript, and Oracle SQL.</li>
                         </ul>
 
-                        </p>
+                        </div>
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -91,12 +91,12 @@ function Timeline() {
                     >
                         <h3 className="vertical-timeline-element-title">B.Tech in Computer Science and Engineering</h3>
                         <h4 className="vertical-timeline-element-subtitle">Mahatma Gandhi University, India</h4>
-                        <p>
+                        <div className="timeline-event-content">
                             <ul style={{textAlign:"left"}}>
                                 <li>7.5 CGPA</li>
                                 <li>Relevant Coursework: Theory of Computation, Data Structures and Algorithm, Object Oriented Programming, Software Engineering</li>
                             </ul>
-                        </p>
+                        </div>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </Container>

@@ -18,7 +18,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projectData.map(data=>{
             return(
-              <Col md={4} className="project-card">
+              <Col md={4} className="project-card" key={data.Key}>
                 <ProjectCard
                   data = {data}
                 />
