@@ -1,26 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.30f862c5.css",
-    "main.js": "/static/js/main.1e339563.js",
+    "main.css": "/static/css/main.0664c5a3.css",
+    "main.js": "/static/js/main.bc0e8104.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/Fakenews1.png": "/static/media/Fakenews1.baebd8bc67ffa3355d35.png",
     "static/media/IntelliBoardA1.png": "/static/media/IntelliBoardA1.98737c72f3d685bfac5a.png",
+    "static/media/MusicRNN.jpeg": "/static/media/MusicRNN.e5fc4b829295c78c1e96.jpeg",
     "static/media/ExpenseA3.png": "/static/media/ExpenseA3.a6701896a0f9bf09e60c.png",
+    "static/media/SeachEngine.png": "/static/media/SeachEngine.c16cbff30eeb96b2911e.png",
     "static/media/ExpenseA2.png": "/static/media/ExpenseA2.2b0f9fdc9824e67100a8.png",
+    "static/media/Profile.jpg": "/static/media/Profile.66400b737ce642629a75.jpg",
     "static/media/Jess Joseph Benny.pdf": "/static/media/Jess Joseph Benny.4bb59bc4ba7aedc69ca9.pdf",
     "static/media/ExpenseA1.png": "/static/media/ExpenseA1.8fb1efe8388700b01a37.png",
     "static/media/ExpenseA4.png": "/static/media/ExpenseA4.c59051a381b9fa11128c.png",
+    "static/media/CoWINAlert.png": "/static/media/CoWINAlert.4da9ddf1e255387e95b0.png",
     "static/media/Data extraction-rafiki.svg": "/static/media/Data extraction-rafiki.565dda60858d4a48a6bd5638d44e924f.svg",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.30f862c5.css.map": "/static/css/main.30f862c5.css.map",
-    "main.1e339563.js.map": "/static/js/main.1e339563.js.map",
+    "main.0664c5a3.css.map": "/static/css/main.0664c5a3.css.map",
+    "main.bc0e8104.js.map": "/static/js/main.bc0e8104.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.30f862c5.css",
-    "static/js/main.1e339563.js"
+    "static/css/main.0664c5a3.css",
+    "static/js/main.bc0e8104.js"
   ]
 }
